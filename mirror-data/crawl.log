@@ -1,0 +1,66 @@
+seed: 271 pages, 948 media
+  pages: 50 done, 16 queued
+  pages: 100 done, 51 queued
+  pages: 150 done, 61 queued
+  pages: 200 done, 72 queued
+  pages: 250 done, 78 queued
+  pages: 300 done, 0 queued
+  pages: 350 done, 0 queued
+pages pass: 355
+  assets: 50 done, 0 queued
+  assets: 100 done, 0 queued
+  assets: 150 done, 0 queued
+  assets: 200 done, 12 queued
+  assets: 250 done, 12 queued
+  assets: 300 done, 62 queued
+  assets: 350 done, 62 queued
+  assets: 400 done, 63 queued
+  assets: 450 done, 63 queued
+  assets: 500 done, 65 queued
+  assets: 550 done, 65 queued
+  assets: 600 done, 65 queued
+  assets: 650 done, 65 queued
+  assets: 700 done, 65 queued
+  assets: 750 done, 65 queued
+  assets: 800 done, 65 queued
+  assets: 850 done, 65 queued
+  assets: 900 done, 65 queued
+  assets: 950 done, 70 queued
+  assets: 1000 done, 70 queued
+  assets: 1050 done, 85 queued
+  assets: 1100 done, 85 queued
+  assets: 1150 done, 85 queued
+  assets: 1200 done, 85 queued
+  assets: 1250 done, 85 queued
+  assets: 1300 done, 85 queued
+  assets: 1350 done, 85 queued
+  assets: 1400 done, 85 queued
+  assets: 1450 done, 85 queued
+  assets: 1500 done, 85 queued
+  assets: 1550 done, 85 queued
+  assets: 1600 done, 85 queued
+  assets: 1650 done, 90 queued
+  assets: 1700 done, 90 queued
+  assets: 1750 done, 90 queued
+  assets: 1800 done, 90 queued
+  assets: 1850 done, 90 queued
+  assets: 1900 done, 90 queued
+  assets: 1950 done, 90 queued
+  assets: 2000 done, 90 queued
+  assets: 2050 done, 90 queued
+  assets: 2100 done, 90 queued
+  assets: 2150 done, 90 queued
+  assets: 2200 done, 90 queued
+  assets: 2250 done, 90 queued
+  assets: 2300 done, 90 queued
+  assets: 2350 done, 90 queued
+  assets: 2400 done, 90 queued
+  assets: 2450 done, 0 queued
+  assets: 2500 done, 0 queued
+assets pass: 2525
+done: pages 355/355, assets 2524/2525, errors 1, unmapped links 17
+  404 assets: 50 done, 0 queued
+  404 assets: 100 done, 15 queued
+  404 assets: 150 done, 20 queued
+  404 assets: 200 done, 25 queued
+404.html written (1 new assets); .htaccess and /Users/dra/eigent/pmcare-reconstruction/config/nginx-pmcare.conf written

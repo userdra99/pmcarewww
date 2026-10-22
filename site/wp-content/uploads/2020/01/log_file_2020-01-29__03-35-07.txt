@@ -1,0 +1,17 @@
+
+---Downloaded files---
+The import files for: Demo01 were successfully downloaded!
+Initial max execution time = 3000
+Files info:
+Site URL = http://www.jtesocial.com/pmcare
+Data file = /home/jtesocia/public_html/pmcare/wp-content/uploads/2020/01/demo-content-import-file_2020-01-29__03-35-07.xml
+Widget file = /home/jtesocia/public_html/pmcare/wp-content/uploads/2020/01/demo-widgets-import-file_2020-01-29__03-35-07.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+---Importing widgets---
+An error occurred while reading a file from your server! Tried reading file from path: <br>/home/jtesocia/public_html/pmcare/wp-content/uploads/2020/01/demo-widgets-import-file_2020-01-29__03-35-07.json.
+
+---pt-ocdi/after_import---
+

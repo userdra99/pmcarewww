@@ -1,0 +1,271 @@
+{
+ "freshness": {
+  "changed_since_crawl": [],
+  "live_assets_missing_locally": [],
+  "now_unreachable_on_live": [],
+  "pages_compared": 355,
+  "pass": true
+ },
+ "inventory": {
+  "live_counts": {
+   "categories": 18,
+   "media": 948,
+   "pages": 51,
+   "posts": 203
+  },
+  "missing": [],
+  "pass": true
+ },
+ "links": {
+  "leftover_absolute_urls": [],
+  "missing_also_dead_on_live": [
+   {
+    "in": [
+     "/post/23897/index.html",
+     "/post/23949/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/2020/06/02/upcoming-webinar-session-with-imu-healthcare-argh-back-to-office/a4-webinar-pmcare-and-imu-healthcare-01/"
+   },
+   {
+    "in": [
+     "/page/21699/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/actionable-data"
+   },
+   {
+    "in": [
+     "/bm/index.html",
+     "/index.html",
+     "/page/21057/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/actionable-data/"
+   },
+   {
+    "in": [
+     "/page/21377/index.html",
+     "/page/21665/index.html",
+     "/page/21679/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/be-our-partner/"
+   },
+   {
+    "in": [
+     "/page/22996/index.html",
+     "/page/22996/paged/2/index.html",
+     "/page/22996/paged/3/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/bm/berita-acara/"
+   },
+   {
+    "in": [
+     "/page/23030/index.html",
+     "/page/23030/paged/2/index.html",
+     "/page/23030/paged/3/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/bm/blog-kesihatan/"
+   },
+   {
+    "in": [
+     "/page/22888/index.html",
+     "/page/22903/index.html",
+     "/page/22912/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/bm/data-untuk-tindakan/"
+   },
+   {
+    "in": [
+     "/bm/index.html",
+     "/page/22888/index.html",
+     "/page/22903/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/bm/jadi-rakan-kami/"
+   },
+   {
+    "in": [
+     "/page/22888/index.html",
+     "/page/22903/index.html",
+     "/page/22912/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/bm/kawalan-kos-berkesan/"
+   },
+   {
+    "in": [
+     "/page/22888/index.html",
+     "/page/22912/index.html",
+     "/page/22921/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/bm/kemudahan-ahli/"
+   },
+   {
+    "in": [
+     "/page/22888/index.html",
+     "/page/22903/index.html",
+     "/page/22921/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/bm/penjimatan-sumber-manusia/"
+   },
+   {
+    "in": [
+     "/bm/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/bm/penyelesaian-kami/"
+   },
+   {
+    "in": [
+     "/page/22888/index.html",
+     "/page/22903/index.html",
+     "/page/22912/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/bm/penyelesaian-kesejahteraan/"
+   },
+   {
+    "in": [
+     "/page/38219/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/contact-us/"
+   },
+   {
+    "in": [
+     "/bm/index.html",
+     "/index.html",
+     "/page/21057/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/cost-containment/"
+   },
+   {
+    "in": [
+     "/page/38217/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/covid-19-monitoring-system/"
+   },
+   {
+    "in": [
+     "/page/21665/index.html",
+     "/page/21679/index.html",
+     "/page/21691/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/e-farma"
+   },
+   {
+    "in": [
+     "/page/21577/index.html",
+     "/page/21577/paged/2/index.html",
+     "/page/21580/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/health-blog/"
+   },
+   {
+    "in": [
+     "/post/100352/index.html",
+     "/post/101959/index.html",
+     "/post/103545/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/health-blog/general-health/"
+   },
+   {
+    "in": [
+     "/post/21825/index.html",
+     "/post/22323/index.html",
+     "/post/22333/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/health-blog/workplace-health/"
+   },
+   {
+    "in": [
+     "/bm/index.html",
+     "/index.html",
+     "/page/21057/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/members-healthcare/"
+   },
+   {
+    "in": [
+     "/page/21837/index.html",
+     "/page/21837/paged/2/index.html",
+     "/page/21837/paged/3/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/news-events/"
+   },
+   {
+    "in": [
+     "/post/22295/index.html",
+     "/post/22302/index.html",
+     "/post/22772/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/news-events/news-release/"
+   },
+   {
+    "in": [
+     "/bm/index.html",
+     "/index.html",
+     "/page/21665/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/optimising-hr/"
+   },
+   {
+    "in": [
+     "/bm/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/our-clients/"
+   },
+   {
+    "in": [
+     "/bm/index.html",
+     "/index.html",
+     "/page/21057/index.html"
+    ],
+    "live_status": 404,
+    "ref": "/wellness-solutions/"
+   }
+  ],
+  "missing_from_mirror": [],
+  "pass": true,
+  "summary": [
+   "scanned 381 files; missing targets: 26; leftover absolute site URLs: 0"
+  ]
+ },
+ "root_files": {
+  "missing": [],
+  "pass": true
+ },
+ "runtime": {
+  "dynamic_endpoints_called": {
+   "/cdn-cgi/rum": 1,
+   "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js": 10
+  },
+  "failed_but_dead_on_live": [],
+  "failed_requests": {},
+  "pass": false,
+  "render_timeouts": [
+   "desktop /category/24/paged/3/",
+   "mobile /category/30/"
+  ],
+  "renders": 712,
+  "requests_seen": 4375
+ }
+}

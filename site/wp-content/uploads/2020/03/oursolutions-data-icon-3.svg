@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="730px" height="430px" viewBox="0 0 730 430" enable-background="new 0 0 730 430" xml:space="preserve">
+<path opacity="0.2" fill="#ED1E79" d="M503.034,296.472c0,38.542-31.458,69.784-70.264,69.784
+	c-38.812,0-70.271-31.242-70.271-69.784s31.458-69.782,70.271-69.782C471.576,226.689,503.034,257.93,503.034,296.472z"/>
+<g opacity="0.8">
+	<g>
+		<path fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M328.512,250.322H176.661
+			c8.699,23.086,22.502,43.67,40.049,60.363h111.802V250.322z"/>
+		<path fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M328.512,76.375H215.89
+			c-17.355,16.744-30.986,37.317-39.532,60.364h152.154V76.375z"/>
+		<path fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M328.512,30.902
+			c-43.747,0-83.443,17.322-112.622,45.473h112.622V30.902z"/>
+		<path fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M441.134,76.375
+			c-29.179-28.151-68.875-45.473-112.622-45.473v45.473H441.134z"/>
+		<path fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M216.71,310.686
+			c29.1,27.686,68.466,44.679,111.802,44.679v-44.679H216.71z"/>
+		<path fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M441.134,76.375H328.512
+			v60.364h152.153C472.12,113.693,458.488,93.119,441.134,76.375z"/>
+		<path fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M328.512,355.364
+			c43.336,0,82.702-16.993,111.803-44.679H328.512V355.364z"/>
+		<path fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M328.512,310.686h111.803
+			c17.546-16.693,31.35-37.277,40.049-60.363H328.512V310.686z"/>
+		<g>
+			<path fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M298.803,193.133
+				H166.282c0,20.131,3.677,39.401,10.379,57.189h151.851v-27.481C312.104,222.841,298.803,209.54,298.803,193.133z"/>
+			<path fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M328.512,163.425V136.74
+				H176.358c-6.512,17.565-10.076,36.562-10.076,56.393l0,0h132.521C298.803,176.726,312.104,163.425,328.512,163.425z"/>
+			<path fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M480.665,136.74H328.512
+				v26.685c16.407,0,29.708,13.301,29.708,29.708h132.522l0,0C490.742,173.302,487.178,154.305,480.665,136.74z"/>
+			<path fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M328.512,222.841v27.481
+				h151.852c6.701-17.788,10.379-37.058,10.379-57.189H358.22C358.22,209.54,344.919,222.841,328.512,222.841z"/>
+		</g>
+	</g>
+	
+		<ellipse fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" cx="328.535" cy="193.133" rx="76.053" ry="162.231"/>
+	
+		<circle fill="none" stroke="#263238" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" cx="328.511" cy="193.133" r="29.708"/>
+	<circle fill="#ED1E79" cx="328.512" cy="193.133" r="14.353"/>
+	<circle fill="#ED1E79" cx="400.816" cy="250.322" r="14.353"/>
+	<circle fill="#ED1E79" cx="257.844" cy="250.322" r="14.352"/>
+	<circle fill="#ED1E79" cx="400.816" cy="136.74" r="14.353"/>
+	<circle fill="#ED1E79" cx="257.844" cy="136.74" r="14.352"/>
+	<circle fill="#ED1E79" cx="328.512" cy="353.575" r="14.353"/>
+	<circle fill="#ED1E79" cx="216.71" cy="310.686" r="14.353"/>
+	<circle fill="#ED1E79" cx="439.11" cy="310.686" r="14.354"/>
+	<circle fill="#ED1E79" cx="216.71" cy="76.376" r="14.353"/>
+	<circle fill="#ED1E79" cx="439.11" cy="76.376" r="14.354"/>
+	<circle fill="#ED1E79" cx="328.535" cy="31.897" r="14.353"/>
+	<circle fill="#ED1E79" cx="490.742" cy="193.133" r="14.353"/>
+	<circle fill="#ED1E79" cx="166.281" cy="196.57" r="14.353"/>
+</g>
+</svg>

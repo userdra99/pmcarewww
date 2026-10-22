@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PMCare – The Missing Piece for your Healthcare Management needs</title>
+<meta name="description" content="PMCare is the pioneer and leading Third Party Administrator (TPA) in Malaysia. We Manage Because We Care.">
+<!--
+  Static reconstruction of https://www.pmcare.com.my/ (homepage, EN).
+  Source evidence: REA capture_browser_scenario
+    ev_9ac510bccf9e9101898a9121ada77a80451c8688ae295c9c59fd6575bb24d097 (DOM, a11y, network, viewport)
+    ev_bbaa562d3d9164acefd03ba726ab5069412eb4f579b00e16fd4dc38701b85e29 (full-height screenshot)
+  Original stack: WordPress 6.6 + Ohio theme + WPBakery + Slider Revolution 6.1.7 + Contact Form 7 + Polylang.
+  This rebuild: plain HTML/CSS/vanilla JS, no jQuery. Images are referenced from the live site.
+-->
+<link rel="icon" href="https://www.pmcare.com.my/wp-content/uploads/2020/08/cropped-pmcare-favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#0389be;
+  --blue-2:#0389b9;
+  --ink:#263238;
+  --muted:#50748a;
+  --grey:#90a4ae;
+  --pink:#ed1e79;
+  --coral:#f35b40;
+  --lav:#ebf0ff;
+  --mist:#f5f6fb;
+  --field:#f4f5f7;
+  --line:#cdd3ea;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Roboto,system-ui,sans-serif;font-weight:300;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4,h5,h6{margin:0}
+.slab{font-family:"Roboto Slab",Georgia,serif}
+.outline{color:transparent;-webkit-text-stroke:1px var(--blue);font-weight:400}
+.container{max-width:1080px;margin:0 auto;padding:0 24px}
+.wide{max-width:1280px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:12px;top:12px;z-index:999;background:#fff;padding:8px 12px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-width:150px;height:44px;padding:0 28px;border-radius:999px;border:1px solid var(--blue);color:var(--blue);font-size:12px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;background:transparent;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:var(--blue);color:#fff}
+.btn.lg{min-width:250px;height:50px}
+.btn.white{border-color:#fff;color:#fff}
+.btn.white:hover{background:#fff;color:var(--blue)}
+.btn.solid-white{background:#fff;border-color:#fff;color:var(--blue)}
+.btn.solid-white:hover{background:transparent;color:#fff}
+
+/* Header */
+.header{position:absolute;inset:0 0 auto;z-index:50;padding:22px 30px;display:flex;align-items:flex-start;gap:34px;color:#fff;transition:background .25s,box-shadow .25s,padding .25s}
+.header.fixed{position:fixed;background:#fff;color:var(--ink);box-shadow:0 2px 20px rgba(38,50,56,.08);padding:12px 30px}
+.logo{width:50px;flex:none}
+.logo .dark{display:none}
+.header.fixed .logo .light{display:none}
+.header.fixed .logo .dark{display:block}
+.nav{flex:1;padding-top:8px}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:0 39px}
+.nav .top a{font-size:15px;opacity:.8}
+.nav .main{margin-top:10px}
+.nav .main>li{position:relative}
+.nav .main>li>a{font-size:16px;font-weight:500}
+.nav a:hover{opacity:1;color:var(--blue)}
+.header:not(.fixed) .nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:6px}
+.nav .sub{display:block;position:absolute;top:100%;left:-18px;min-width:240px;padding:14px 0;margin-top:10px;background:#fff;border-radius:8px;box-shadow:0 10px 30px rgba(38,50,56,.15);opacity:0;visibility:hidden;transform:translateY(6px);transition:.2s}
+.nav .sub::before{content:"";position:absolute;inset:-12px 0 auto;height:12px}
+.nav .sub a{display:block;padding:8px 18px;color:var(--ink);font-size:14px;font-weight:400;opacity:1}
+.nav .sub a:hover{color:var(--blue);text-decoration:none!important}
+.nav .main>li:hover .sub,.nav .main>li:focus-within .sub{opacity:1;visibility:visible;transform:none}
+.tools{display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+.tools .row1{display:flex;align-items:center;gap:50px;font-size:15px}
+.lang{display:flex;gap:16px;font-weight:400}
+.lang .on{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.search-btn{display:flex;align-items:center;gap:10px;background:none;border:0;color:inherit;font:inherit;cursor:pointer;opacity:.85}
+.tools .row2{display:flex;gap:10px}
+.header.fixed .btn.white{border-color:var(--blue);color:var(--blue)}
+.header.fixed .btn.solid-white{background:var(--blue);border-color:var(--blue);color:#fff}
+.burger{display:none;margin-left:auto;background:none;border:0;color:inherit;cursor:pointer;padding:6px}
+
+/* Hero */
+.hero{position:relative;height:min(708px,49.2vw);min-height:480px;background:#3bc4dd url(https://www.pmcare.com.my/wp-content/uploads/2020/03/homepage-banner-6.jpg) center/cover no-repeat;overflow:hidden}
+.hero-copy{position:absolute;left:49.3%;top:46%;color:#fff}
+.hero h1{font-family:"Roboto Slab",serif;font-weight:700;font-size:clamp(40px,4.6vw,66px);line-height:1.1;letter-spacing:-.5px}
+.hero h1 .outline{-webkit-text-stroke:1.5px #fff;font-weight:700}
+.hero p{margin:6px 0 0;font-size:clamp(20px,2.3vw,33px);font-weight:300}
+.hero p b{font-weight:500}
+
+/* Intro */
+.intro{padding:130px 0 90px}
+.intro h2{text-align:center;font-family:"Roboto Slab",serif;font-weight:700;font-size:26px;line-height:1.35;text-transform:uppercase;letter-spacing:.02em}
+.intro h2 span{color:var(--blue)}
+.intro-row{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:62px 0 50px;font-size:15px;line-height:1.7}
+.intro-row strong{font-weight:500}
+.intro-row em{font-style:normal;color:var(--blue)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.stat .num{font-family:Roboto,sans-serif;font-size:84px;line-height:.95;color:transparent;-webkit-text-stroke:1px var(--blue);font-weight:300;letter-spacing:-1px}
+.stat .num sup{font-size:40px;vertical-align:baseline;color:var(--blue);-webkit-text-stroke:0}
+.stat h3{color:var(--blue);font-weight:700;font-size:21px;line-height:1.2;margin:2px 0 30px}
+.stat p{max-width:270px;margin:0;font-size:15px;line-height:1.65;color:var(--ink)}
+
+/* Digital + solutions */
+.digital{background:var(--lav);padding:150px 0 110px}
+.digital-top{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center}
+.digital h2{font-family:"Roboto Slab",serif;font-weight:400;font-size:32px;line-height:1.35}
+.digital h2 .outline{display:block;white-space:nowrap;font-size:clamp(34px,3.4vw,50px);line-height:1.1;font-weight:700;-webkit-text-stroke:1.2px var(--blue)}
+.digital-top p{font-size:15px;line-height:1.7;margin:18px 0 0}
+.divider{height:1px;background:var(--line);margin:80px 0 70px}
+.solutions{display:grid;grid-template-columns:1fr 1fr;gap:56px 50px}
+.sol{display:grid;grid-template-columns:62px 1fr;gap:22px;align-items:start}
+.sol img{width:62px}
+.sol small{display:block;color:var(--pink);font-size:15px;font-weight:400}
+.sol h3{color:var(--pink);font-size:21px;font-weight:700;margin:2px 0 10px}
+.sol p{margin:0 0 16px;font-size:15px;line-height:1.65}
+.more{display:inline-flex;align-items:center;gap:18px;font-size:12px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.more i{width:26px;height:26px;border:1px solid currentColor;border-radius:50%;display:grid;place-items:center;font-style:normal;transition:.2s}
+.more:hover{color:var(--pink)}
+.more:hover i{background:var(--pink);border-color:var(--pink);color:#fff}
+
+/* eConsult */
+.econsult{position:relative;height:650px;background:#e9ecef url(https://www.pmcare.com.my/wp-content/uploads/2024/02/header-eConsult.png) center/cover no-repeat}
+.econsult .wide{height:100%;display:flex;flex-direction:column;justify-content:center;padding-left:100px}
+.econsult h2{font-family:"Roboto Slab",serif;font-weight:700;font-size:52px;line-height:1.35;max-width:330px;margin-bottom:32px}
+
+/* Clients */
+.clients{padding:130px 0 70px}
+.clients-grid{display:grid;grid-template-columns:350px 1fr;gap:50px}
+.title-xl{font-family:"Roboto Slab",serif;font-weight:700;font-size:52px;line-height:1.1}
+.title-xl .outline{-webkit-text-stroke:1.2px var(--blue)}
+.clients-grid p{font-size:15px;line-height:1.75;max-width:340px;margin:28px 0 0}
+.logos{display:grid;grid-template-columns:repeat(4,1fr);gap:24px 30px;align-items:center}
+.logos img{max-height:62px;margin:auto;object-fit:contain}
+.clients .see{display:flex;justify-content:flex-end;margin-top:48px}
+
+/* Testimonials */
+.testi{padding:20px 0 80px}
+.slides{position:relative}
+.slide{display:none;grid-template-columns:460px 1fr;gap:50px;align-items:start}
+.slide.on{display:grid;animation:fade .5s}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.slide .photo{aspect-ratio:460/388;background:center/cover no-repeat #eee}
+.slide .body{position:relative;padding-top:10px}
+.slide .q{position:absolute;left:-90px;top:20px;font-family:Georgia,serif;font-size:150px;line-height:1;color:var(--coral);font-weight:900}
+.slide blockquote{margin:0;font-family:"Roboto Slab",serif;font-weight:300;font-size:26px;line-height:1.35}
+.slide h4{margin-top:58px;font-size:16px;font-weight:700}
+.slide .role{margin:6px 0 0;color:var(--coral);font-size:16px;font-weight:500;line-height:1.6}
+.slide .role span{display:block;font-weight:400}
+.dots{display:flex;justify-content:center;gap:14px;margin-top:64px}
+.dots button{width:8px;height:8px;border-radius:50%;border:0;background:#c5ccd3;padding:0;cursor:pointer;transition:.2s}
+.dots button.on{width:22px;height:22px;background:#fff;border:2px solid var(--blue);box-shadow:inset 0 0 0 5px #fff,inset 0 0 0 10px var(--blue)}
+
+/* Quote form */
+.quote{background:var(--mist);padding:40px 0 70px}
+.card{max-width:1064px;margin:0 auto;background:#fff;border:1px solid #9ec9e6;border-radius:18px;padding:62px 50px 60px}
+.card h2{text-align:center}
+.card .lead{text-align:center;font-size:15px;margin:22px 0 40px;font-weight:400}
+.card .lead strong{font-weight:700}
+.field{margin-bottom:22px}
+.field label,.group legend{display:block;font-size:15px;font-weight:500;color:var(--blue);margin-bottom:12px;padding:0}
+.field input,.field select{width:100%;height:50px;border:0;border-radius:2px;background:var(--field);padding:0 18px;font:400 15px Roboto,sans-serif;color:var(--ink)}
+.field select{appearance:none;background:var(--field) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%230389be' stroke-width='1.5'/%3E%3C/svg%3E") right 18px center no-repeat}
+.field input:focus,.field select:focus{outline:2px solid var(--blue);outline-offset:0}
+.note{font-size:11px;color:var(--blue);margin:-14px 0 14px}
+.group{border:0;margin:0 0 22px;padding:0}
+.group label{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:400;margin:0 0 8px 14px;cursor:pointer}
+.group input{width:14px;height:14px;accent-color:var(--blue)}
+.err{color:var(--coral);font-size:13px;margin-top:6px;display:none}
+.field.bad .err,.group.bad .err{display:block}
+.submit{display:flex;justify-content:flex-end;margin-top:10px}
+.ok{display:none;text-align:center;padding:30px;color:var(--blue);font-size:18px;font-weight:400}
+
+/* News */
+.news{padding:70px 0 110px}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;height:530px}
+.tile{position:relative;overflow:hidden;color:#fff;background:center/cover no-repeat #0b4a7c}
+.tile::before{content:"";position:absolute;inset:0;background:rgba(10,60,130,.62);transition:.3s}
+.tile:hover::before{background:rgba(3,137,190,.72)}
+.tile .in{position:relative;height:100%;display:flex;flex-direction:column;justify-content:flex-start;padding:30px 50px}
+.tile.big{grid-row:span 2}
+.tile.big .in{justify-content:flex-end;padding:40px}
+.tile h3{font-family:"Roboto Slab",serif;font-weight:700;font-size:20px;line-height:1.4;margin-bottom:22px}
+.tile.big h3{font-size:38px;line-height:1.3;margin-bottom:16px}
+.tile p{font-size:14px;line-height:1.7;margin:0 0 26px;opacity:.85}
+.tile .btn{min-width:210px;height:48px;align-self:flex-start}
+
+/* Partner */
+.partner{padding:0 0 0}
+.partner .bg{height:560px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#f3f4f6 url(https://www.pmcare.com.my/wp-content/uploads/2020/03/homepage-partner-section.jpg) center/cover no-repeat}
+.partner p{max-width:500px;font-size:15px;line-height:1.85;margin:28px 0 38px}
+
+/* Footer */
+footer{background:var(--ink);color:#fff;margin-top:110px}
+.foot{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding:80px 24px 60px}
+.foot h3{font-family:"Roboto Slab",serif;font-weight:700;font-size:18px;margin:0 0 16px}
+.foot address,.foot p{font-style:normal;margin:0 0 30px;font-size:15px;line-height:1.75;color:#cfd8dc}
+.foot a:hover{color:#fff;text-decoration:underline}
+.dir{display:flex;gap:14px}
+.dir a{width:54px;height:54px;background:center/contain no-repeat;transition:opacity .2s}.dir a:hover{opacity:.75}
+.dir .waze{background-image:url(https://www.pmcare.com.my/wp-content/uploads/2020/03/footer-waze-logo.png)}
+.dir .map{background-image:url(https://www.pmcare.com.my/wp-content/uploads/2020/03/footer-map-logo-2.svg)}
+.bottom{border-top:1px solid rgba(255,255,255,.12)}
+.bottom .container{max-width:1280px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:22px 24px;font-size:13px;color:var(--grey)}
+.bottom a:hover{color:#fff}
+
+/* Search overlay */
+.overlay{position:fixed;inset:0;z-index:100;background:rgba(3,40,64,.94);display:none;align-items:center;justify-content:center;padding:24px}
+.overlay.on{display:flex}
+.overlay form{width:min(720px,100%);display:flex;border-bottom:2px solid #fff}
+.overlay input{flex:1;background:none;border:0;color:#fff;font:300 34px Roboto,sans-serif;padding:12px 0;outline:none}
+.overlay input::placeholder{color:rgba(255,255,255,.6)}
+.overlay .x{position:absolute;top:24px;right:30px;background:none;border:0;color:#fff;font-size:34px;cursor:pointer}
+
+/* Mobile */
+@media (max-width:1100px){
+  .nav,.tools{display:none}
+  .burger{display:block}
+  .header{align-items:center;padding:16px 20px}
+  .header.open{position:fixed;inset:0;background:#fff;color:var(--ink);flex-wrap:wrap;align-content:flex-start;overflow:auto}
+  .header.open .logo .light{display:none}.header.open .logo .dark{display:block}
+  .header.open .nav,.header.open .tools{display:block;flex:1 1 100%}
+  .header.open .nav ul{flex-direction:column;gap:14px}
+  .header.open .nav .top a{font-size:16px;opacity:1}
+  .header.open .nav .sub{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;padding:6px 0 0 12px;margin:0}
+  .header.open .tools{margin-top:24px}
+  .header.open .tools .row1,.header.open .tools .row2{justify-content:flex-start;margin-bottom:14px}
+  .header.open .btn.white{border-color:var(--blue);color:var(--blue)}
+  .header.open .btn.solid-white{background:var(--blue);border-color:var(--blue);color:#fff}
+  .hero{background-image:url(https://www.pmcare.com.my/wp-content/uploads/2020/02/mainBanner01-m.jpg);height:auto;min-height:620px}
+  .hero::after{content:"";position:absolute;inset:auto 0 0;height:55%;background:linear-gradient(transparent,rgba(3,60,90,.75))}
+  .hero-copy{left:24px;right:24px;top:auto;bottom:48px;z-index:1;text-shadow:0 2px 12px rgba(0,0,0,.35)}
+  .digital-top,.clients-grid,.solutions,.slide,.stats{grid-template-columns:1fr}
+  .slide .q{position:static;font-size:90px;height:60px}
+  .intro-row{flex-direction:column;align-items:flex-start}
+  .econsult{height:520px;background-position:62% center}
+  .econsult .wide{padding-left:24px}
+  .mosaic{grid-template-columns:1fr;grid-template-rows:auto;height:auto}
+  .tile{min-height:260px}.tile.big{grid-row:auto;min-height:420px}
+  .foot{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .intro{padding:80px 0 60px}.intro h2{font-size:20px}
+  .title-xl,.econsult h2{font-size:38px}
+  .digital{padding:80px 0}.digital h2 .outline{font-size:38px;white-space:normal}
+  .logos{grid-template-columns:repeat(2,1fr)}
+  .card{padding:40px 20px}
+  .slide blockquote{font-size:20px}
+  .tile.big h3{font-size:28px}
+  .tile .in{padding:24px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header" id="header">
+  <a class="logo" href="#" aria-label="PMCare">
+    <img class="light" src="https://www.pmcare.com.my/wp-content/uploads/2020/03/pmcare-logo-w-retina.png" alt="PMCare">
+    <img class="dark" src="https://www.pmcare.com.my/wp-content/uploads/2020/03/pmcare-logo-retina.png" alt="PMCare">
+  </a>
+  <nav class="nav" aria-label="Primary">
+    <ul class="top">
+      <li><a href="https://www.pmcare.com.my/?page_id=21254">About Us</a></li>
+      <li><a href="https://www.pmcare.com.my/?page_id=21265">News &amp; Events</a></li>
+      <li><a href="https://www.pmcare.com.my/?page_id=21812">Health Blog</a></li>
+      <li><a href="https://www.pmcare.com.my/?page_id=21377">Contact Us</a></li>
+    </ul>
+    <ul class="main">
+      <li><a href="https://www.pmcare.com.my/?page_id=21225">Our Solutions</a>
+        <div class="sub">
+          <a href="https://www.pmcare.com.my/?page_id=21665">Members Healthcare</a>
+          <a href="https://www.pmcare.com.my/?page_id=21057">Optimising HR</a>
+          <a href="https://www.pmcare.com.my/?page_id=21679">Cost Containment</a>
+          <a href="https://www.pmcare.com.my/?page_id=21691">Actionable Data</a>
+          <a href="https://www.pmcare.com.my/?page_id=21699">Wellness Solutions</a>
+        </div>
+      </li>
+      <li><a href="https://www.pmcare.com.my/?page_id=21127">Our Clients</a></li>
+      <li><a href="https://www.pmcare.com.my/?page_id=21187">Be Our Partner</a></li>
+      <li><a href="https://www.pmcare.com.my/?page_id=38249">Health Screening Service</a></li>
+      <li><a href="#" aria-haspopup="true">Unique Services</a>
+        <div class="sub">
+          <a href="https://www.pmcare.com.my/?page_id=38217">Covid-19 Screening Service</a>
+          <a href="https://www.pmcare.com.my/?page_id=38297">Covid-19 Management System</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="tools">
+    <div class="row1">
+      <div class="lang"><a class="on" href="#">EN</a><span>|</span><a href="https://www.pmcare.com.my/?lang=bm">BM</a></div>
+      <button class="search-btn" type="button" data-search>Search
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="10" cy="10" r="8"/><path d="M16 16l6 6"/></svg>
+      </button>
+    </div>
+    <div class="row2">
+      <a class="btn white" href="https://www.pmcare.com.my/?page_id=21411">Members</a>
+      <a class="btn solid-white" href="#quote">Get a Quote</a>
+    </div>
+  </div>
+  <button class="burger" type="button" aria-label="Menu" aria-expanded="false">
+    <svg width="28" height="20" viewBox="0 0 28 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 1h28M0 10h28M0 19h28"/></svg>
+  </button>
+</header>
+
+<main id="main">
+  <section class="hero" aria-label="Banner">
+    <div class="hero-copy">
+      <h1>The <span class="outline">Missing</span> Piece</h1>
+      <p>for your <b>Healthcare Management</b> needs</p>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="container">
+      <h2><span>PM</span>Care is the pioneer and leading<br>Third Party Administrator (TPA) in Malaysia</h2>
+      <div class="intro-row">
+        <div>
+          We effectively serve our big family of members, clients, payors and medical providers.<br>
+          <strong>As your Premier Managed Care Organisation (MCO), <em>We Manage Because We Care.</em></strong>
+        </div>
+        <a class="btn lg" href="https://www.pmcare.com.my/?page_id=21254">Read More</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="num" data-count="30">30</div><h3>Years</h3><p>Our experience in serving various companies for the past 30 years enables us to come up with unique solutions to your needs.</p></div>
+        <div class="stat"><div class="num"><span data-count="8000">8000</span><sup>+</sup></div><h3>Medical Provider<br>Network</h3><p>We are collaborating with a network of more than 8,000 strong medical providers nationwide to allow easy and safe cashless access.</p></div>
+        <div class="stat"><div class="num"><span data-count="100">100</span><sup>%</sup></div><h3>Customisable</h3><p>We offer our clients 100% customisation and compatible service, so that our solutions will uniquely solve your problems.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="digital">
+    <div class="container">
+      <div class="digital-top">
+        <img src="https://www.pmcare.com.my/wp-content/uploads/2020/03/homepage-1st-graphic.png" alt="" loading="lazy">
+        <div>
+          <h2>Powered by <span class="outline">Digital Platforms,</span> Supported by <span class="outline">Experienced Teams</span></h2>
+          <p>Healthcare management has never been this easy, fast, accurate and reliable!</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="solutions">
+        <article class="sol"><img src="https://www.pmcare.com.my/wp-content/uploads/2020/02/healthcare-without-hassle.png" alt="" loading="lazy"><div><small>Giving Members</small><h3>Healthcare Without Hassle</h3><p>Get the healthcare you deserve at your fingertips - for faster and better decision-making!</p><a class="more" href="https://www.pmcare.com.my/members-healthcare/">Read More <i>›</i></a></div></article>
+        <article class="sol"><img src="https://www.pmcare.com.my/wp-content/uploads/2020/01/optimised-human-resources.png" alt="" loading="lazy"><div><small>Helping HR</small><h3>Optimise Resources</h3><p>Provide the best care and assistance for your employees’ healthcare - with minimal resources!</p><a class="more" href="https://www.pmcare.com.my/optimising-hr/">Read More <i>›</i></a></div></article>
+        <article class="sol"><img src="https://www.pmcare.com.my/wp-content/uploads/2020/02/effective-cost-control.png" alt="" loading="lazy"><div><small>Control expenses with</small><h3>Effective Cost Containment</h3><p>Make the most of your medical budget - with over 30 years of successful cost containment experience!</p><a class="more" href="https://www.pmcare.com.my/cost-containment/">Read More <i>›</i></a></div></article>
+        <article class="sol"><img src="https://www.pmcare.com.my/wp-content/uploads/2020/02/better-decision-making.png" alt="" loading="lazy"><div><small>Get Actionable Data for</small><h3>Better Decision-Making</h3><p>Our members have their own Patient Health Record to facilitate information exchange from end to end.</p><a class="more" href="https://www.pmcare.com.my/actionable-data/">Read More <i>›</i></a></div></article>
+        <article class="sol"><img src="https://www.pmcare.com.my/wp-content/uploads/2020/02/designed-for-you.png" alt="" loading="lazy"><div><small>Wellness Solutions</small><h3>Designed for You</h3><p>Wellness programmes tailored according to members’ medical utilisation, history and diagnosis!</p><a class="more" href="https://www.pmcare.com.my/wellness-solutions/">Read More <i>›</i></a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="econsult">
+    <div class="wide">
+      <h2>You Can Book eConsult Now!</h2>
+      <div><a class="btn lg" href="https://www.pmcare.com.my/?page_id=25720">Learn More</a></div>
+    </div>
+  </section>
+
+  <section class="clients">
+    <div class="container">
+      <div class="clients-grid">
+        <div>
+          <h2 class="title-xl"><span class="outline">Our</span> Clients</h2>
+          <p>With over 30 years of experience in the industry, we provide better partnerships with our digitized integrated service, supported by our professional and experienced team.</p>
+        </div>
+        <div>
+          <div class="logos">
+            <img src="https://www.pmcare.com.my/wp-content/uploads/2020/03/client-malaysia-airports-logo.png" alt="Malaysia Airports" loading="lazy">
+            <img src="https://www.pmcare.com.my/wp-content/uploads/2020/03/client-tm-logo.png" alt="TM" loading="lazy">
+            <img src="https://www.pmcare.com.my/wp-content/uploads/2020/03/client-kwsp-logo.png" alt="KWSP EPF" loading="lazy">
+            <img src="https://www.pmcare.com.my/wp-content/uploads/2020/03/client-prince-court-logo.png" alt="Prince Court Medical Centre" loading="lazy">
+            <img src="https://www.pmcare.com.my/wp-content/uploads/2020/03/client-pos-malaysia-logo.png" alt="Pos Malaysia" loading="lazy">
+            <img src="https://www.pmcare.com.my/wp-content/uploads/2020/10/khazanah-RGB-HV1-3.png" alt="Khazanah Nasional" loading="lazy">
+            <img src="https://www.pmcare.com.my/wp-content/uploads/2020/03/client-takaful-logo.png" alt="Takaful Ikhlas" loading="lazy">
+            <img src="https://www.pmcare.com.my/wp-content/uploads/2025/09/KPJ-Logo-1-Photoroom.png" alt="KPJ Healthcare" loading="lazy">
+          </div>
+          <div class="see"><a class="btn lg" href="https://www.pmcare.com.my/?page_id=21127">See All</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testi" aria-label="Testimonials">
+    <div class="container">
+      <div class="slides" id="slides"></div>
+      <div class="dots" id="dots" role="tablist"></div>
+    </div>
+  </section>
+
+  <section class="quote" id="quote">
+    <div class="container">
+      <div class="card">
+        <h2 class="title-xl"><span class="outline">Get a</span> Quote</h2>
+        <p class="lead">To get a quote for your <strong>employee’s medical benefits plan,</strong> please complete the form below:</p>
+        <form id="quoteForm" novalidate>
+          <div class="field"><label for="f-name">Full Name</label><input id="f-name" name="name" required autocomplete="name"><div class="err">Please fill out this field.</div></div>
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"><div class="err">Please enter a valid email address.</div></div>
+          <div class="field"><label for="f-phone">Phone Number</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel"><div class="err">Please fill out this field.</div></div>
+          <div class="field"><label for="f-role">Designation/Role</label><input id="f-role" name="role" required autocomplete="organization-title"><div class="err">Please fill out this field.</div></div>
+          <div class="field"><label for="f-company">Company Name</label><input id="f-company" name="company" required autocomplete="organization"><div class="err">Please fill out this field.</div></div>
+          <div class="field"><label for="f-emp">Company Total Employees</label><input id="f-emp" name="employees" inputmode="numeric" required><div class="err">Please fill out this field.</div></div>
+          <p class="note">Note: PMCare minimum headcount coverage is 20 members per company.</p>
+          <div class="field"><label for="f-dep">Total Dependent Covered</label><input id="f-dep" name="dependents" required><div class="err">Please fill out this field.</div></div>
+          <p class="note">Note: If dependents are not covered, please input nil</p>
+          <div class="field"><label for="f-cov">Does your company provide medical coverage?</label>
+            <select id="f-cov" name="coverage" required><option value="">Select</option><option>Yes</option><option>No</option></select><div class="err">Please select an option.</div></div>
+          <fieldset class="group" data-required><legend>How does your company manage employee's medical benefits?</legend>
+            <label><input type="checkbox" name="manage" value="Self-managed by HR">Self-managed by HR</label>
+            <label><input type="checkbox" name="manage" value="Outsource a TPA">Outsource a Third Party Administrator (TPA)</label>
+            <label><input type="checkbox" name="manage" value="Insurance partner or broker">Liaise with insurance partner or broker</label>
+            <label><input type="checkbox" name="manage" value="Other">Other</label>
+            <div class="err">Please select at least one option.</div>
+          </fieldset>
+          <fieldset class="group" data-required><legend>What are your company's current medical benefits?</legend>
+            <div data-benefits="current"></div><div class="err">Please select at least one option.</div>
+          </fieldset>
+          <fieldset class="group" data-required><legend>Which medical benefits that would you like to know more about?</legend>
+            <div data-benefits="interest"></div><div class="err">Please select at least one option.</div>
+          </fieldset>
+          <div class="submit"><button class="btn lg" type="submit">Submit Now</button></div>
+        </form>
+        <div class="ok" id="ok" role="status">Thank you! Our sales team will be in touch with you shortly.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news" aria-label="News &amp; Events">
+    <div class="wide">
+      <div class="mosaic">
+        <a class="tile big" href="https://www.pmcare.com.my/?p=120835" style="background-image:url(https://www.pmcare.com.my/wp-content/uploads/2026/03/News-events-website-header-long-horizontal-768x427.png)">
+          <div class="in">
+            <h3>PMCare Community Outreach 2026: Rumah Kebajikan Noor Manzil</h3>
+            <p>Spreading Blessings with Rumah Kebajikan Noor Manzil Community outreach continues to remind us that giving goes far beyond material contributions. It encourages us...</p>
+            <span class="btn white">Read More</span>
+          </div>
+        </a>
+        <a class="tile" href="https://www.pmcare.com.my/?p=120104" style="background-image:url(https://www.pmcare.com.my/wp-content/uploads/2026/02/News-events-website-header-long-horizontal-768x427.png)">
+          <div class="in"><h3>PMCare Recognized as Brand of the Year at The BrandLaureate DigiTech BestBrands Awards 2025–2026</h3><span class="btn white">Read More</span></div>
+        </a>
+        <a class="tile" href="https://www.pmcare.com.my/?p=114362" style="background-image:url(https://www.pmcare.com.my/wp-content/uploads/2025/10/Survey-In-app-Banner-Description-2-2-768x492.png)">
+          <div class="in"><h3>Members' Awareness &amp; Satisfaction Survey 2025</h3><span class="btn white">Read More</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="partner">
+    <div class="wide">
+      <div class="bg">
+        <h2 class="title-xl" style="font-size:clamp(34px,3.6vw,52px)">Let's <span class="outline">Partner</span> Up!</h2>
+        <p>We are keen to work with like-minded teams from the healthcare and medical industry. If you are a medical provider, health start-up or any healthcare and wellness related business, let’s work together!</p>
+        <a class="btn lg" href="https://www.pmcare.com.my/?page_id=21187">Be A Partner Today!</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot wide">
+    <div>
+      <h3>Location</h3>
+      <address>Level 12, Menara Insignia,<br>Persiaran Kewajipan, USJ 1,<br>47600 Subang Jaya, Selangor, Malaysia.</address>
+    </div>
+    <div>
+      <h3>24-hour Careline</h3><p><a href="tel:+60380267799">+603 8026 7799</a></p>
+      <h3>General Enquiry</h3><p><a href="tel:+60380266888">+603 8026 6888</a></p>
+      <h3>Sales Enquiry</h3><p><a href="tel:+60380266891">+603 8026 6891</a><br><a href="tel:+60380266897">+603 8026 6897</a></p>
+    </div>
+    <div>
+      <h3>Get Direction</h3>
+      <div class="dir">
+        <a class="waze" href="https://www.waze.com/ul?place=ChIJgTiEW8RMzDERH47IxbcSoNU&amp;ll=3.02929240%2C101.58205270&amp;navigate=yes" target="_blank" rel="noopener" aria-label="Waze"></a>
+        <a class="map" href="https://goo.gl/maps/c6wVhoFCNz3CnyJ17" target="_blank" rel="noopener" aria-label="Google Maps"></a>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="container">
+      <span>Copyright © <span id="yr">2026</span> PMCare Sdn Bhd. All Rights Reserved.</span>
+      <span><a href="https://www.pmcare.com.my/?page_id=89673">Terms of Use &amp; Privacy Policy</a> &nbsp;|&nbsp; <a href="https://www.pmcare.com.my/?page_id=89675">PDPA</a> &nbsp;|&nbsp; <a href="https://www.pmcare.com.my/?page_id=123365">ISMS Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" id="search" role="dialog" aria-label="Search">
+  <button class="x" type="button" aria-label="Close search">×</button>
+  <form action="https://www.pmcare.com.my/" method="get"><input name="s" placeholder="Type to search…" aria-label="Search"></form>
+</div>
+
+<script>
+(() => {
+  // Sticky header (Ohio theme "header-fixed" behaviour)
+  const header = document.getElementById('header');
+  const onScroll = () => header.classList.toggle('fixed', scrollY > 120 && !header.classList.contains('open'));
+  addEventListener('scroll', onScroll, {passive: true}); onScroll();
+
+  // Mobile menu
+  const burger = header.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const open = header.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    onScroll();
+  });
+  header.querySelectorAll('a[href^="#quote"]').forEach(a => a.addEventListener('click', () => {
+    header.classList.remove('open'); document.body.style.overflow = '';
+  }));
+
+  // Search overlay
+  const search = document.getElementById('search');
+  document.querySelectorAll('[data-search]').forEach(b => b.addEventListener('click', () => {
+    search.classList.add('on'); search.querySelector('input').focus();
+  }));
+  search.querySelector('.x').addEventListener('click', () => search.classList.remove('on'));
+  addEventListener('keydown', e => { if (e.key === 'Escape') search.classList.remove('on'); });
+
+  // Stat counters
+  const io = new IntersectionObserver(entries => entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    io.unobserve(e.target);
+    const el = e.target, end = +el.dataset.count, t0 = performance.now();
+    const step = t => { const p = Math.min((t - t0) / 1400, 1); el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); };
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) requestAnimationFrame(step);
+  }), {threshold: .4});
+  document.querySelectorAll('[data-count]').forEach(el => io.observe(el));
+
+  // Testimonials carousel (order and photos as observed in the live DOM)
+  const up = 'https://www.pmcare.com.my/wp-content/uploads/';
+  const testimonials = [
+    {img: '2020/02/homeTestimonialProfile02.jpg', q: 'PMCare provides assistance that lessens the HR work. Previously, there were 13 staff that handled medical administration for our company. Now, there is only 1!', n: 'Nizar Bin Zaini', r: 'Vice President Compensation & Benefits, Human Capital', c: 'POS Malaysia'},
+    {img: '2020/03/homeTestimonialProfile04.jpg', q: "When it comes to corporate wellness, PMCare is the forefront of change and innovation. They've challenged the status quo to serve the needs of every individual employees, again and again.", n: 'Sherry Someh', r: 'Founder / Director', c: 'Health Junction'},
+    {img: '2020/02/homeTestimonialProfile03.jpg', q: "PMCare brings the best medical treatment to our employees and provides consultancy on our company's healthcare. Their 25 years of experience shows in their excellent service!", n: 'Encik Azahar Bin Ab Rahim', r: 'General Manager, Human Capital Business Partner', c: 'Malaysia Airports Holdings Berhad'},
+    {img: '2020/03/homeTestimonialProfile05.jpg', q: 'Thanks to e-Farma by PMCare, I can request my medication anytime and have them delivered to my doorstep! This ensures there is no loss of productivity, whilst drugs prices are controlled.', n: 'Datuk Bazlan Osman', r: 'Independent Director', c: ''}
+  ];
+  const slides = document.getElementById('slides'), dots = document.getElementById('dots');
+  const esc = s => s.replace(/[&<>"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]));
+  testimonials.forEach((t, i) => {
+    slides.insertAdjacentHTML('beforeend',
+      `<div class="slide${i ? '' : ' on'}" role="tabpanel"><div class="photo" style="background-image:url(${up + t.img})"></div>
+       <div class="body"><span class="q" aria-hidden="true">“</span><blockquote>${esc(t.q)}</blockquote>
+       <h4>${esc(t.n)}</h4><p class="role">${esc(t.r)}<span>${esc(t.c)}</span></p></div></div>`);
+    dots.insertAdjacentHTML('beforeend', `<button role="tab" aria-label="Testimonial ${i + 1}"${i ? '' : ' class="on"'}></button>`);
+  });
+  let cur = 0, timer;
+  const go = i => {
+    slides.children[cur].classList.remove('on'); dots.children[cur].classList.remove('on');
+    cur = (i + testimonials.length) % testimonials.length;
+    slides.children[cur].classList.add('on'); dots.children[cur].classList.add('on');
+  };
+  const auto = () => { clearInterval(timer); timer = setInterval(() => go(cur + 1), 7000); };
+  [...dots.children].forEach((d, i) => d.addEventListener('click', () => { go(i); auto(); }));
+  auto();
+
+  // Quote form: benefit checklists + client-side validation.
+  // The original posts to Contact Form 7 with an image captcha; this static rebuild has no backend.
+  const benefits = ['Hospitalization', 'GP', 'Specialist', 'Dental', 'Optical', 'Health Screening', 'Maternity', 'Other'];
+  document.querySelectorAll('[data-benefits]').forEach(box => {
+    box.innerHTML = benefits.map(b => `<label><input type="checkbox" name="${box.dataset.benefits}" value="${b}">${b}</label>`).join('');
+  });
+  const form = document.getElementById('quoteForm');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    let first = null;
+    form.querySelectorAll('.field').forEach(f => {
+      const el = f.querySelector('input,select'); const bad = !el.checkValidity() || !el.value.trim();
+      f.classList.toggle('bad', bad); if (bad && !first) first = el;
+    });
+    form.querySelectorAll('.group[data-required]').forEach(g => {
+      const bad = !g.querySelector('input:checked'); g.classList.toggle('bad', bad); if (bad && !first) first = g.querySelector('input');
+    });
+    if (first) { first.focus(); return; }
+    form.style.display = 'none'; document.getElementById('ok').style.display = 'block';
+  });
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

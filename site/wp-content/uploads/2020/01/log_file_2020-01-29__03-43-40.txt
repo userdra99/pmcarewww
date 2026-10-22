@@ -1,0 +1,56 @@
+
+---Downloaded files---
+The import files for: Demo10 were successfully downloaded!
+Initial max execution time = 3000
+Files info:
+Site URL = http://www.jtesocial.com/pmcare
+Data file = /home/jtesocia/public_html/pmcare/wp-content/uploads/2020/01/demo-content-import-file_2020-01-29__03-43-40.xml
+Widget file = /home/jtesocia/public_html/pmcare/wp-content/uploads/2020/01/demo-widgets-import-file_2020-01-29__03-43-40.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Blog : 
+
+Search - No Title - Widget already exists
+Recent Posts - No Title - Widget already exists
+Recent Comments - No Title - Widget already exists
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+Categories - No Title - Imported
+Recent Posts - No Title - Imported
+Custom HTML - Need something customized? - Imported
+
+Footer column 1 : 
+
+Ohio: Logo - No Title - Imported
+Custom HTML - No Title - Imported
+
+Footer column 2 : 
+
+Custom HTML - Barcelona - Imported
+Custom HTML - Rotterdam - Imported
+
+Footer column 3 : 
+
+Custom HTML - Work inquiries - Imported
+Custom HTML - Phone - Imported
+
+Footer column 4 : 
+
+Ohio: Subscribe - Stay in touch - Imported
+
+Shop : 
+
+Categories - No Title - Imported
+
+
+
+---pt-ocdi/after_import---
+
